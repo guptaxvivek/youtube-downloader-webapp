@@ -1,7 +1,6 @@
 from pytube import YouTube
 import streamlit as st
 from io import BytesIO
-import time
 
 st.title("Youtube Downloader")
 
@@ -33,7 +32,6 @@ if link:
     with st.spinner('Please Wait...'):
         down_mp4()
         down_mp3()
-        time.sleep(5)
 
     col1, col2 = st.columns(2)
 
